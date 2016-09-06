@@ -8,5 +8,5 @@ title: webSocket
 
 ## 初识WebSocket
 
-WebSocket是一种自然的全双工、双向、单套接字连接。
+WebSocket是一种自然的全双工、双向、单套接字连接。仅通过Web上的一个Socket即可进行通信,是HTML5中最强大的通信功能.它可以减少不必要的网络流量并降低网络延迟.
 
