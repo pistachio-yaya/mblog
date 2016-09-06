@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %> | 喵blog</title>
+    <link rel='stylesheet' href='/stylesheets/article.css' />
+    <link rel="stylesheet" type="text/css" href="/stylesheets/font-awesome.min.css" />
+    <!-- <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'> -->
+    <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+    <!-- <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;"> -->
+
+  </head>
+  <body>
+    <section class="side-bar">
+        <div class="head-pic"><a href="http://mm.littlewords.cn"><img src="/images/cc3.jpg"></a></div>
+        <div class="blog-name">miaomiao's blog</div>
+
+        <ul class="person-intro">
+              <li><i class="icon-envelope-alt"></i><span>947516801@qq.com</span></li>
+        </ul>
+
+	<p style = "margin-left:60px; font-size = 14px;color:#853e66;">“学如逆水行舟，不进则退。"</p>
+
+    </section>
+    <section class="content">
+        <article>
+            <h1><%- art_attr.title %> </h1>
+            <%- content %>  
+            <div id="SOHUCS"></div>
+            <script charset="utf-8" type="text/javascript" src="http://changyan.sohu.com/upload/changyan.js" ></script>
+            <script type="text/javascript">
+                window.changyan.api.config({
+                    appid: 'cyskLsVCf',
+                    conf: 'prod_89c7f46ea65db2d0858074da21d9fcfc'
+                });
+            </script> 
+        </article>     
+    </section>
+
+  
+   <div id="goTop" class="goTop" style="border:0px solid black; position:fixed;right:20px;bottom:20px;width:50px;height:60px;display:none;"><img src="/images/top.jpg" style="widht:100%;height:100%"></div>
+   <script type="text/javascript">
+	var goTop = document.getElementById("goTop");
+
+		window.onscroll = function(){
+		
+			if(document.body.scrollTop > 500){
+			
+				goTop.style.display="block";
+			}else{
+				goTop.style.display="none";
+			}
+		}
+		goTop.onclick = function(){
+			document.body.scrollTop =0;
+		}
+   </script>
+
+
+
+  </body>
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/highlight.js/9.2.0/styles/androidstudio.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/highlight.js/9.2.0/styles/atelier-estuary.dark.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/highlight.js/9.1.0/styles/github.min.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/highlight.js/9.1.0/styles/github-gist.min.css"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/highlight.js/9.1.0/styles/googlecode.min.css"> -->
+    <script src="https://cdn.bootcss.com/highlight.js/9.2.0/highlight.min.js"></script> 
+    <script>hljs.initHighlightingOnLoad();</script>
+    <!--高速版-->
+    
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %> | 喵blog</title>
+    <meta name="keywords" content="javascript, css, html, blog, github">
+    <meta name="description" content="a blog of a new FE">
+    <meta name="author" content="miaomiao">
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
+    <link rel='stylesheet' href='/stylesheets/index.css' />
+    <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <section class="left">
+      <div class="head-pic"><a href="http://mm.littlewords.cn"><img src="/images/cc3.jpg"></a></div>
+
+      <div class="blog-name">Welcome to</div>
+      <div class="blog-name">miaomiao's blog</div>
+      <h3 class="list-title">文章分类</h2>
+      <ul class="category-list" id="category-list">
+      </ul>
+    </section>
+<!--     <section class="middle">
+      <h2 class="section-title">文章分类</h2>
+      <ul class="article-list" id="category-list">
+      </ul>
+    </section> -->
+    <section class="right">
+      <h2 class="section-title">文章列表</h2>
+      <ul class="article-list" id="article-list">
+      </ul>   
+      <div class="hide-scroll"></div> 
+    </section>
+  </body>
+  <script type="text/javascript">
+    var categorys = <%- JSON.stringify(categorys) %>
+  </script>
+  <script type="text/javascript" src="/javascripts/renderCategory.js"></script>
+</html>

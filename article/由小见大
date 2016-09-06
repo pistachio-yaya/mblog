@@ -1,0 +1,30 @@
+---
+category:javascript
+title:由小见大问题合集
+tag:baseline
+---
+## img元素设置高以后，父元素不设置高，结果有3.6667px的像素差问题
+
+在实际的表现当中，我们一般情况下会考虑是不是父元素有一个浏览器默认的高度，其实到页面中查看元素的宽高时，发现并不是这样，也不是常规的有默认的margin或者padding的情况。那排除以上两种情况以后不难想到会是baseline的问题。
+
+由于两个元素的baseline对齐方式不同，img标签和文本默认是下边缘与基线对齐，而不是紧贴容器下边缘，可以通过以下几种方法解决：
+1. 直接给父元素设置合适的高度；
+2. 设置img的display值为block,原因是img的默认display为inline；
+3. 设置相同的对齐方式：vertical-align:top;
+4. 设置父元素的line-height为0，(如果内层为文本则设置font-size为0) ；
+
+## 给几何拼接图形添加border的方法
+
+要给一个由一个圆和一个矩形部分重叠的图形添加border，只需要使用z-index对需要消除border的元素作用就可以了，但是有一点需要注意，z-index方法只对定位元素有效。
+
+## 正则与toString
+```
+(function(){
+    var re = /x/;
+    var i = 0;
+    console.log(re);
+    re.toString = function(){
+        return ++i;
+    };
+})()
+```
