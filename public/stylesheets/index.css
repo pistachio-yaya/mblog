@@ -60,7 +60,7 @@ body {
     width: 80%;
 }
 .hide-scroll {
-    background: #ffffff;
+    background: #eee;
     width: 30px;
     /*border: 1px solid #ccc;*/
     position: fixed;
