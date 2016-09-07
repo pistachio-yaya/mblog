@@ -23,11 +23,11 @@ body {
 }
 .left {
     height: 100%;
-    width: 20%;
+    width: 25%;
     position: fixed;
     background: #eee;
     z-index: 2;
-    margin-left:300px;
+    /*margin-left:300px;*/
 }
 /*.middle {
     height: 100%;
@@ -45,9 +45,9 @@ body {
     /*margin-left: -20px;*/
     border-left: 1px solid #ccc;
     background: #eee;
-    width: 50%;
+    width: 75%;
     overflow: auto;
-    left: 36.5%;
+    left: 25%;
     z-index: 2;
 }
 .section-title {
