@@ -18,4 +18,5 @@ animation属性是一个简写属性,用于设置六个动画属性:
 
 ## 例子
 没有例子就不足以说明问题,下面就上干货
+
 ![move picture](/images/cc1.jpg)
