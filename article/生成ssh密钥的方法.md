@@ -1,5 +1,5 @@
 ---
-category:Git
+category:Node
 title:生成ssh密钥的方法
 ---
 
