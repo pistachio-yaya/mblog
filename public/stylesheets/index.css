@@ -104,7 +104,10 @@ body {
 }
 .category-list {
   display: inline-block;
-  width: 100%;
+  width: 105%;
+  height:45%;
+  overflow:scroll; 
+  /*repair*/
   text-align: center;
 }
 .category-list li {
