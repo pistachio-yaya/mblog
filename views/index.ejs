@@ -19,7 +19,7 @@
       border:2px solid black;
 */      z-index:4;
     }
-    img{
+    .img_container img{
       width:450px;
       height:100%;
       display:inline;
@@ -65,7 +65,7 @@
 
   <script type="text/javascript">
     var img_container = document.getElementById("img_container");
-    var imgList = document.getElementsByTagName("img");
+    var imgList = img_container.getElementsByTagName("img");
     var active_img = imgList[0];
     active_img.className = 'active';
     var i = 0 ;
