@@ -104,8 +104,10 @@ body {
 }
 .category-list {
   display: inline-block;
-  width: 100%;
+  width: 105%;
+  height:310px;
   text-align: center;
+  overflow: scroll;
 }
 .category-list li {
   margin: 5px 0;
