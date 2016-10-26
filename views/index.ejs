@@ -8,6 +8,28 @@
     <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;">
     <link rel='stylesheet' href='/stylesheets/index.css' />
     <link href='https://fonts.googleapis.com/css?family=Chewy' rel='stylesheet' type='text/css'>
+
+  <style type="text/css">
+    .img_container{
+      width:450px;
+      height:100%;
+      position:fixed;
+      right:0px;
+    }
+    img{
+      width:450px;
+      height:100%;
+      display:inline;
+      float:left;
+      position:absolute;
+      opacity: 0;
+    }
+    .active{
+      opacity:1;
+    }
+  </style>
+
+
   </head>
   <body>
     <section class="left">
@@ -19,20 +41,52 @@
       <ul class="category-list" id="category-list">
       </ul>
     </section>
-<!--     <section class="middle">
-      <h2 class="section-title">文章分类</h2>
-      <ul class="article-list" id="category-list">
-      </ul>
-    </section> -->
     <section class="right">
       <h2 class="section-title">文章列表</h2>
       <ul class="article-list" id="article-list">
       </ul>   
       <div class="hide-scroll"></div> 
     </section>
+
+    <section>
+      <div class="img_container" id="img_container">
+        <img src="./IMG_2196.jpg">
+        <img src="./IMG_2200.jpg">
+      </div>
+    </section>
+
   </body>
   <script type="text/javascript">
     var categorys = <%- JSON.stringify(categorys) %>
   </script>
   <script type="text/javascript" src="/javascripts/renderCategory.js"></script>
+
+
+  <script type="text/javascript">
+    var img_container = document.getElementById("img_container");
+    var imgList = document.getElementsByTagName("img");
+    var active_img = imgList[0];
+    active_img.className = 'active';
+    var i = 0 ;
+    var len = imgList.length - 1;
+    var autoPlay = function(i){
+      if(i >= len){
+        active_img = imgList[0];
+        imgList[len].className = '';
+        imgList[0].className = 'active';
+      }else{
+        active_img = imgList[i+1];
+        imgList[i].className = '';
+        imgList[i+1].className = 'active';
+      }
+    }
+    setInterval(function(){
+      autoPlay(i);
+      if(i < len){
+        i++;
+      }else{
+        i = 0;
+      }
+    },3000)
+  </script>
 </html>
