@@ -105,13 +105,8 @@ body {
 .category-list {
   display: inline-block;
   width: 105%;
-<<<<<<< HEAD
-  height:45%;
-  overflow:scroll; 
-  /*repair*/
-=======
-  height:310px;
->>>>>>> 58d65a7be31d8bb9fa567b363b317b7fadb560c0
+  height:36%;
+  overflow-x: hidden;
   text-align: center;
   overflow: scroll;
 }
