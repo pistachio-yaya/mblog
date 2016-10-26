@@ -81,6 +81,7 @@ body {
   height: 144px;
   border-radius: 50%;
   margin: 3px 3px;
+  opacity:1;
 }
 .blog-name {
   text-align: center;
