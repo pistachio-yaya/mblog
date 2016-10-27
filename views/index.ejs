@@ -27,7 +27,7 @@
       position:absolute;
       opacity: 0;
     }
-    .active{
+    .activeimg{
       opacity:1;
     }
   </style>
@@ -67,18 +67,18 @@
     var img_container = document.getElementById("img_container");
     var imgList = img_container.getElementsByTagName("img");
     var active_img = imgList[0];
-    active_img.className = 'active';
+    active_img.className = 'activeimg';
     var i = 0 ;
     var len = imgList.length - 1;
     var autoPlay = function(i){
       if(i >= len){
         active_img = imgList[0];
         imgList[len].className = '';
-        imgList[0].className = 'active';
+        imgList[0].className = 'activeimg';
       }else{
         active_img = imgList[i+1];
         imgList[i].className = '';
-        imgList[i+1].className = 'active';
+        imgList[i+1].className = 'activeimg';
       }
     }
     setInterval(function(){
