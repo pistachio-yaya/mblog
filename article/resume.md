@@ -7,8 +7,8 @@ title: 个人简历
 
 ## 实习和工作经历
 >2015年10月－2015年01月	北京		xx公司		前端实习
- 2016年04月－2016年07月	重庆		oo公司		前端实习
- 2016年08月－至今			北京     qq公司		前端正式
+2016年04月－2016年07月	重庆		oo公司		前端实习
+2016年08月－至今			北京     qq公司		前端正式
 
 ## 猫猫最近研究的东东
 * Node.js
@@ -20,6 +20,6 @@ title: 个人简历
 
 ## 猫猫的前端技术分布
 > css => css3
-  html => html5
-  js => nodejs
-  express => promise
+html => html5
+js => nodejs
+express => promise
