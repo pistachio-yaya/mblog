@@ -1,5 +1,5 @@
 ---
-catrgory:Node
+category:Node
 title:使用node爬取网页数据并用图表展现
 ---
 
