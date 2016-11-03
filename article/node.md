@@ -1,6 +1,6 @@
 ---
 category: Node
-title: node.js
+title: node.js学习笔记
 ---
 
 ## Node.js不是js应用，而是js运行平台
