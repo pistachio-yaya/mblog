@@ -1,7 +1,7 @@
 ---
-title:protocol
+title:http
 tag:http相关内容
-category:http
+category:protocol
 ---
 
 最近在深入的学习http协议，一边学习一边记录吧！
