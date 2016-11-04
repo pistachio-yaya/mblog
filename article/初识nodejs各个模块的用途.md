@@ -28,4 +28,4 @@ category:Node
 2. 将querystring反序列化为一个对象(parse)
 
 ## StringDecoder模块
-1.将一个buffer解码成一个字符串
+1. 将一个buffer解码成一个字符串
