@@ -7,7 +7,9 @@ title:nginx安装问题
 
 ## 问题
 1.安装 yum install nginx
+
 安装成功，查看版本也成功
+
 2.启动 service nginx start
 报错：
 >Starting nginx: nginx: [emerg] socket() [::]:80 failed (97: Address family not supported by protocol)
