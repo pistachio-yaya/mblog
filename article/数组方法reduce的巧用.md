@@ -36,4 +36,15 @@ arr.reduce(function(res,cur){
 ```
 理解这些以后觉得数组方法太厉害了，简直想把所有的数组方法都拿来研究一下，哈哈，稍等，这里应该先弄懂reduce
 ## reduce参数介绍
-reduce方法接收一个回调函数和一个参数，reduce的第二个参数可以设置回调函数的第一个参数的类型和初始值。
+reduce方法接收一个回调函数和一个参数，reduce的第二个参数可以设置回调函数的第一个参数的类型和初始值。回调函数接收四个参数：
+```
+var arr = [1,2,3,4,5];
+arr.reduce(function(pre,cur,index,arr){
+	console.log(pre);
+	console.log(cur);
+	console.log(index);
+	console.log(arr);
+	return pre + cur;
+})
+```
+具体每个参数代表的含义只要打出来一看就很清晰了，猫猫这里就不写了，另外一个数组方法reduceRight，从字面来讲就是从右向左的reduce方法，只在将前面例子的reduce替换一下就知道了，喵～完结！
