@@ -1,5 +1,5 @@
 ---
-category:javascipt
+category:javascript
 title:数组方法reduce的巧用
 ---
 原生js中有很多很棒的数组方法，只是因为不兼容ie9以下的浏览器一直没有被广泛使用，但是对于兼容性要求不高的场景，我们的数组方法还是可以发挥大作用的，这里以reduce方法为例，猫猫也是吃了一惊。接下来直接讲reduce的使用场景
