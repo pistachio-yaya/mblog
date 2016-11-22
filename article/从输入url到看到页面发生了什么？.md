@@ -70,10 +70,10 @@ X-Powered-By:Express
 
 ## 10.html解析、渲染页面
 了解html解析的整个过程是激动人心的，大致分为：构建DOM树、下载资源、构建CSS规则树、执行脚本。（注意：这里没有说先后顺序）这里猫猫主要目标在js的解析上，先说一下document.readyState的几个状态值，这个也是猫猫之前不知道的，还要感谢电面的面试官问到我，才让我有机会知道。document的readyState有四个值，依次是：
-* uninitialized - 还未开始载入
-* loading - 载入中
-* interactive - 已加载，文档与用户可以开始交互
-* complete - 载入完成
+>uninitialized - 还未开始载入
+loading - 载入中
+interactive - 已加载，文档与用户可以开始交互
+complete - 载入完成
 现在我们就来看看这几个阶段时浏览器都干了什么。浏览器拿到html文档后，先创建一个document对象然后解析html，将解析到的元素和文本节点添加到文档中，readyState变为loading。html遇到script标签后，先检查是否defer和async字段，如果没有直接将它们天假到文档中并开始执行（这些脚本是同步执行的，下载和执行过程中解析器暂停）；如果有async属性则开始下载脚本并继续解析文档，脚本下载完成后尽快执行，当文档完成解析后，readyState变成interactive。defer属性的脚本按序zhixing，document对象上出发DOMContentLoaded事件，文档完全解析，浏览器继续加载图片内容，待图片加载完成、所有的defer脚本加载和执行后，readyState变为complete，这时window对象上触发load事件。
 
 ## 结语
