@@ -44,7 +44,9 @@ css代码：
 
 ### getComputedStyle
 查css属性最先想到的应该是去w3c，结果只得到这样一句话：
->一个 HTMLElement 的 style 属性是一个可读可写的 CSS2Properties 对象，就好像 CSSStyleRule 对象的 style 属性一样。不过，Window.getComputedStyle() 的返回值是一个 CSS2Properties (CSS2Properties 对象是所有 CSS2 属性及其值的集合。)对象，其属性是只读的。
+>一个 HTMLElement 的 style 属性是一个可读可写的 CSS2Properties 对象，就好像 CSSStyleRule 对象的 
+style 属性一样。不过，Window.getComputedStyle() 的返回值是一个 CSS2Properties (CSS2Properties 
+对象是所有 CSS2 属性及其值的集合。)对象，其属性是只读的。
 
 
 ### getComputedStyle和currentStyle
