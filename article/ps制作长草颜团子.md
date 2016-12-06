@@ -1,7 +1,6 @@
 ---
 category:photoshop
 title:ps制作长草颜团子
-tag:photoshop安装
 ---
 
 ### 介绍
@@ -13,10 +12,11 @@ tag:photoshop安装
 
 ### 猫猫的成品
 相信你一定会喜欢：
-![move picture](/images/tuan1.png)
+
+![move picture](/images/t2.png)
 
 怎么样是不是很萌，仿佛在说：“亲爱的，你想点什么菜？“
 
-![move picture](/images/tuan2.png)
+![move picture](/images/t1.png)
 
 ”嗯嗯，团子记下了，呆。。。。。。“萌到我了！
