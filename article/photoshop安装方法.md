@@ -1,6 +1,6 @@
 ---
 category:photoshop
-title:photoshop cs5/cs6 安装方法
+title:winows上photoshop cs5/cs6 安装方法
 tag:photoshop安装
 ---
 
