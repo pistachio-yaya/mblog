@@ -15,7 +15,7 @@ title: 个人简历
 
 ## 猫猫最近研究的东东
 1. Node.js
-2. promise
+2. Koa.js
 3. Vue.js
 
 ## 猫猫对工作的看法
@@ -25,7 +25,7 @@ title: 个人简历
 > css => css3
 html => html5
 js => nodejs
-express => promise
+express => Koajs
 
 ## 猫猫的技能描述
 >熟练使用eCharts、svg、canvas
